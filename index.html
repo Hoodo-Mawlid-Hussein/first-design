@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Foundations</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4d03f; /* Yellow background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Card container */
+        .card {
+            background-color: #fff; /* White card background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 350px;
+            max-width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Image container */
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: left 336px;
+            margin-left: 336;
+        }
+
+        /* Card content */
+        .card-content {
+            padding: 20px;
+        }
+
+        /* Tag */
+        .tag {
+            display: inline-block;
+            background-color: #f7c744; /* Slightly darker yellow */
+            color: #000;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* Title */
+        .card-content h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #000;
+          
+        }
+
+        /* Description */
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0 20px;
+        }
+
+        /* Author info */
+        .author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .author span {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+
+        .card {
+                width: 320px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 16px;
+                padding-right: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Card Component -->
+    <div class="card">
+        <!-- Image Section -->
+        <img src="image12.png" alt="Desktop Design" 
+
+        <!-- Content Section -->
+        <div class="card-content">
+            <!-- Tag -->
+            <span class="tag">Learning</span>
+            <h5> puplished 21 Dec</h5>
+
+            <!-- Title -->
+            <h2>HTML & CSS Foundations</h2>
+
+            <!-- Description -->
+            <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+            <!-- Author -->
+            <div class="author">
+                <img src="assets/images/image-avatar.webp" alt="Author Profile">
+                <span>Greg Hooper</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
